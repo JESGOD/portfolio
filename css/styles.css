@@ -1,7 +1,6 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Maven+Pro:wght@400;500;600;700&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -9,7 +8,247 @@
     color: white;
 }
 
-body{
+:root {
+    scroll-behavior: smooth;
+    --title-size: 22px;
+    --title-weight: 600;
+    --subtitle-size: 17px;
+    --paragraph-size: 18px;
+
+}
+
+body {
     min-height: 100%;
-   background-color: rgb(0, 13, 21);
+
+    background-color: rgb(17, 16, 16);
+}
+
+.container {
+    margin: 0 6%;
+    padding: 0;
+    overflow: hidden;
+
+
+}
+
+.title {
+
+    font-size: var(--title-size);
+    margin-bottom: 40px;
+
+}
+
+
+.subtitle {
+    font-size: var(--subtitle-size);
+    margin-bottom: 15px;
+}
+
+.paragraph {
+    font-size: var(--paragraph-size);
+    margin-bottom: 45px;
+}
+
+/*header nav-----------------------------------*/
+.nav {
+    display: flex;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+
+    padding: 30px 6%;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+
+    background-color: rgb(17, 16, 16);
+
+}
+
+/*header nav icono-----------------------------------*/
+.container-icono-nav {
+    display: flex;
+    align-items: center;
+    width: 50%;
+    font-weight: 600;
+
+}
+
+.container-icono-nav span {
+    display: inline-block;
+    width: 30px;
+    background-color: rgb(255, 255, 255);
+    text-align: center;
+    font-size: x-large;
+    color: rgb(0, 183, 255);
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.container-icono-nav p {
+    letter-spacing: 5px;
+    font-size: x-large;
+}
+
+/*header nav opciones menu-----------------------------------*/
+
+.options-menu-nav {
+    display: flex;
+    gap: 15px;
+    font-size: large;
+}
+
+.options,
+.links {
+    list-style: none;
+    text-decoration: none;
+
+}
+
+/*main-----------------------------------*/
+.main {
+    margin-top: 12%;
+
+}
+
+.review-jesgod {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.text-header-main {
+    width: 80%;
+    line-height: 30px;
+}
+
+.text-header-main h1 {
+    margin-bottom: 20px;
+}
+
+.img-perfil-header {
+    width: 15%;
+    border-radius: 50%;
+
+}
+
+
+/*works-----------------------------------*/
+.imagen-work {
+    border-radius: 5%;
+    width: 50%;
+    padding: 0 1%;
+}
+
+.container-works {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+}
+
+
+.work-landingPage {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+
+}
+
+
+
+.text-landingPage {
+    width: 50%;
+
+}
+
+
+.work-webRgb {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row-reverse;
+    margin-bottom: 85px;
+
+}
+
+.text-webRgb {
+    width: 50%;
+}
+
+
+.work-reviews {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 85px;
+}
+
+.text-reviews {
+    width: 50%;
+}
+
+/*about me----------------------------------*/
+
+
+.gallery {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-areas:
+        "elemento3 elemento1"
+        "elemento3 elemento2";
+    gap: 20px;
+    padding: 20px;
+    margin-bottom: 40px;
+}
+
+.img-gallery1 {
+    width: 100%;
+    height: 100%;
+    grid-area: elemento1;
+    box-shadow: 0 0px 6px rgb(255, 255, 255)
+}
+
+.img-gallery2 {
+
+    width: 100%;
+    height: 100%;
+    grid-area: elemento2;
+    box-shadow: 0 0px 6px rgb(255, 255, 255)
+}
+
+.img-gallery3 {
+
+    width: 100%;
+    height: 100%;
+    grid-area: elemento3;
+    box-shadow: 0 0px 6px rgb(255, 255, 255)
+}
+
+.skills-values {
+    display: flex;
+    justify-content: space-between;
+}
+
+/*footer---------------------*/
+
+.line {
+    border: 1px solid white;
+    margin-bottom: 10px;
+}
+
+/* copyright y socialMedia*/
+.copyright-socialMedia {
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+
+.s-icono{
+    font-size: x-large;
+    margin-left: 15px;
+    
 }
