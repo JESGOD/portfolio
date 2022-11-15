@@ -313,6 +313,10 @@ body {
     .options-menu-nav {
         font-size: xx-large;
     }
+     /*footer*/
+     .s-icono {
+        font-size: 35px;
+    }
 
 }
 
@@ -322,10 +326,10 @@ body {
 @media screen and (max-width:800px) {
     :root {
 
-        --title-size: 18px;
+        --title-size: 21px;
         --title-weight: 580;
-        --subtitle-size: 13px;
-        --paragraph-size: 14px;
+        --subtitle-size: 16px;
+        --paragraph-size: 17px;
 
     }
 
@@ -418,10 +422,10 @@ body {
 @media screen and (max-width:500px) {
     :root {
 
-        --title-size: 14px;
+        --title-size: 17px;
         --title-weight: 550;
-        --subtitle-size: 10px;
-        --paragraph-size: 11px;
+        --subtitle-size: 13px;
+        --paragraph-size: 14px;
 
     }
 
