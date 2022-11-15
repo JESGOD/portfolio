@@ -243,12 +243,209 @@ body {
 .copyright-socialMedia {
     display: flex;
     justify-content: space-between;
-    
-   
+
+
 }
 
-.s-icono{
+.s-icono {
     font-size: x-large;
     margin-left: 15px;
+
+}
+
+
+/*responsive pantalla 800px*/
+
+@media screen and (max-width:800px) {
+    :root {
+
+        --title-size: 18px;
+        --title-weight: 580;
+        --subtitle-size: 13px;
+        --paragraph-size: 14px;
+
+    }
+
+
+
+    /*header nav icono-----------------------------------*/
+    .container-icono-nav {
+        width: auto;
+        font-weight: 550;
+
+    }
+
+    .container-icono-nav span {
+        width: 26px;
+        text-align: center;
+        font-size: 20px;
+
+
+        margin-right: 5px;
+    }
+
+    .container-icono-nav p {
+        letter-spacing: 4px;
+        font-size: 20px;
+    }
+
+    /*main header review*/
+    .main {
+        margin-top: 21%;
+
+    }
+
+    .review-jesgod {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    .img-perfil-header {
+        width: 18%;
+        border-radius: 50%;
+        margin-bottom: 30px;
+    }
+
+    .text-header-main {
+        width: 80%;
+        line-height: 30px;
+        text-align: center;
+    }
+
+
+    /*works*/
+    .imagen-work {
+        border-radius: 5%;
+        width: 50%;
+        height: 150px;
+    }
+    .work-landingPage {
+        
+        margin-bottom: 35px
     
+    }
+    
+    .work-webRgb {
+        
+        margin-bottom: 0px;
+    
+    }
+    .work-reviews {
+        
+        margin-bottom: 35px;
+    }
+
+    /*about me / gallery*/
+    .skills{
+        width: 50%;
+    }
+    /*footer*/
+    .s-icono {
+        font-size: large;
+    }
+}
+
+/*500-300px*/
+
+@media screen and (max-width:500px) {
+    :root {
+
+        --title-size: 14px;
+        --title-weight: 550;
+        --subtitle-size: 10px;
+        --paragraph-size: 11px;
+
+    }
+
+
+
+    /*header nav-----------------------------------*/
+   
+    .nav {
+        padding: 15px 0%;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .container-icono-nav {
+        font-weight: 500;
+        margin-bottom: 4px;
+    }
+    
+    .container-icono-nav span {
+        width: 22px;
+        font-size: medium;
+    }
+    
+    .container-icono-nav p {
+        letter-spacing: 3px;
+        font-size: medium;
+    }
+    
+    /*header nav opciones menu-----------------------------------*/
+    
+    .options-menu-nav {
+        display: flex;
+        gap: 12px;
+        font-size: small;
+    }
+
+    /*main header review*/
+    .main {
+        margin-top: 25%;
+
+    }
+
+    
+
+    .img-perfil-header {
+        width: 30%;
+    }
+
+    .text-header-main {
+        line-height: 20px;
+    }
+    
+   
+
+    /*works*/
+    .container-works {
+        margin-top: 40px;
+    }
+    .imagen-work {
+     
+        width: 50%;
+        height: 90px;
+    
+    }
+    .work-landingPage {
+        
+        margin-bottom: 5px
+    
+    }
+    
+    .work-webRgb {
+        
+        flex-flow: row-reverse;
+        margin-bottom: 5px;
+    
+    }
+    .work-reviews {
+        
+        margin-bottom: 5px;
+    }
+
+    /*skills*/
+    .skills{
+        width: auto;
+        
+    }
+    
+    /*footer*/
+    .s-icono {
+        font-size: small;
+    }
 }
