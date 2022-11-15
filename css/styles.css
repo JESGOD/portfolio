@@ -26,7 +26,7 @@ body {
 .container {
     margin: 0 6%;
     padding: 0;
-    overflow: hidden;
+    /*overflow: hidden;*/
 
 
 }
@@ -56,14 +56,12 @@ body {
     width: 100%;
     top: 0;
     left: 0;
-
     padding: 30px 6%;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-
     background-color: rgb(17, 16, 16);
-
+    z-index: 1;
 }
 
 /*header nav icono-----------------------------------*/
@@ -72,6 +70,11 @@ body {
     align-items: center;
     width: 50%;
     font-weight: 600;
+    animation-name: anm-icono-nav;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+
 
 }
 
@@ -103,7 +106,7 @@ body {
 .links {
     list-style: none;
     text-decoration: none;
-
+    padding: 2px 5px;
 }
 
 /*main-----------------------------------*/
@@ -131,6 +134,12 @@ body {
 .img-perfil-header {
     width: 18%;
     border-radius: 50%;
+    padding: 1%;
+    margin: 1%;
+    animation-name: añadir-border;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
 
 }
 
@@ -140,6 +149,7 @@ body {
     border-radius: 5%;
     width: 50%;
     padding: 0 1%;
+
 }
 
 .container-works {
@@ -208,7 +218,8 @@ body {
     width: 100%;
     height: 100%;
     grid-area: elemento1;
-    box-shadow: 0 0px 6px rgb(255, 255, 255)
+    box-shadow: 0 0px 6px rgb(255, 255, 255);
+
 }
 
 .img-gallery2 {
@@ -216,7 +227,8 @@ body {
     width: 100%;
     height: 100%;
     grid-area: elemento2;
-    box-shadow: 0 0px 6px rgb(255, 255, 255)
+    box-shadow: 0 0px 6px rgb(255, 255, 255);
+
 }
 
 .img-gallery3 {
@@ -224,7 +236,7 @@ body {
     width: 100%;
     height: 100%;
     grid-area: elemento3;
-    box-shadow: 0 0px 6px rgb(255, 255, 255)
+    box-shadow: 0 0px 6px rgb(255, 255, 255);
 }
 
 .skills-values {
@@ -250,6 +262,57 @@ body {
 .s-icono {
     font-size: x-large;
     margin-left: 15px;
+
+
+}
+
+.s-icono i {
+    border-radius: 30%;
+    animation: anm-social-icons infinite alternate .5s;
+    /*
+    animation-name: anm-social-icons;
+    animation-duration: .5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    */
+}
+
+
+/*2000px*/
+
+@media screen and (min-width:2000px) {
+    :root {
+
+        --title-size: 40px;
+        --title-weight: 700;
+        --subtitle-size: 30px;
+        --paragraph-size: 31px;
+
+    }
+
+    /*nav */
+
+    /*icono*/
+    .container-icono-nav {
+        font-weight: 700;
+
+    }
+
+    .container-icono-nav span {
+        width: 40px;
+        font-size: xx-large;
+
+    }
+
+    .container-icono-nav p {
+        letter-spacing: 5px;
+        font-size: xx-large;
+    }
+
+    /*menu opciones*/
+    .options-menu-nav {
+        font-size: xx-large;
+    }
 
 }
 
@@ -304,7 +367,7 @@ body {
     }
 
     .img-perfil-header {
-        width: 18%;
+        width: 30%;
         border-radius: 50%;
         margin-bottom: 30px;
     }
@@ -322,26 +385,28 @@ body {
         width: 50%;
         height: 150px;
     }
+
     .work-landingPage {
-        
+
         margin-bottom: 35px
-    
     }
-    
+
     .work-webRgb {
-        
+
         margin-bottom: 0px;
-    
+
     }
+
     .work-reviews {
-        
+
         margin-bottom: 35px;
     }
 
     /*about me / gallery*/
-    .skills{
+    .skills {
         width: 50%;
     }
+
     /*footer*/
     .s-icono {
         font-size: large;
@@ -363,7 +428,7 @@ body {
 
 
     /*header nav-----------------------------------*/
-   
+
     .nav {
         padding: 15px 0%;
         justify-content: center;
@@ -374,19 +439,19 @@ body {
         font-weight: 500;
         margin-bottom: 4px;
     }
-    
+
     .container-icono-nav span {
         width: 22px;
         font-size: medium;
     }
-    
+
     .container-icono-nav p {
         letter-spacing: 3px;
         font-size: medium;
     }
-    
+
     /*header nav opciones menu-----------------------------------*/
-    
+
     .options-menu-nav {
         display: flex;
         gap: 12px;
@@ -399,7 +464,7 @@ body {
 
     }
 
-    
+
 
     .img-perfil-header {
         width: 30%;
@@ -408,44 +473,157 @@ body {
     .text-header-main {
         line-height: 20px;
     }
-    
-   
+
+
+
+
 
     /*works*/
     .container-works {
         margin-top: 40px;
     }
+
     .imagen-work {
-     
+
         width: 50%;
         height: 90px;
-    
+
     }
+
     .work-landingPage {
-        
+
         margin-bottom: 5px
-    
     }
-    
+
     .work-webRgb {
-        
+
         flex-flow: row-reverse;
         margin-bottom: 5px;
-    
+
     }
+
     .work-reviews {
-        
+
         margin-bottom: 5px;
     }
 
     /*skills*/
-    .skills{
+    .skills {
         width: auto;
-        
+
     }
-    
+
     /*footer*/
     .s-icono {
         font-size: small;
+    }
+}
+
+/*afectos------------------------------*/
+
+/*nav*/
+.nav:hover {
+    transition: .2s;
+    box-shadow: 0px 0px 8px rgba(0, 191, 255, 0.684);
+}
+
+.links:hover {
+    transition: 0.1s;
+
+    border-radius: 5px;
+    background-color: rgba(128, 128, 128, 0.403);
+    color: rgba(0, 255, 255, 0.685);
+}
+
+.options:hover {
+    transition: 0.2s;
+    transform: rotate(10deg) scale(1.1);
+}
+
+/*works*/
+
+.work-landingPage:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.work-webRgb:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+.work-reviews:hover {
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+
+
+/*about me */
+
+.img-gallery1:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px rgba(0, 191, 255, 0.684);
+}
+
+.img-gallery2:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px rgba(0, 191, 255, 0.684);
+}
+
+.img-gallery3:hover {
+    transition: 0.3s;
+    transform: scale(1.02);
+    box-shadow: 0px 0px 8px rgba(0, 191, 255, 0.684);
+}
+
+/*footer*/
+/*social icons*/
+
+.s-icono:hover i {
+    color: rgb(0, 191, 255);
+}
+
+/*keyframes animaciones------------------------------*/
+/*icono nav /header main foto*/
+
+.img-perfil-header:hover {
+    box-shadow: 1px 1px 8px rgba(0, 191, 255, 0.384);
+}
+
+@keyframes añadir-border {
+    from {
+        box-shadow: 1px 1px 8px rgba(0, 191, 255, 0.173);
+    }
+
+    to {
+        box-shadow: 1px 1px 8px rgba(0, 191, 255, 0.684);
+    }
+}
+
+@keyframes anm-icono-nav {
+    from {
+        transform: rotate(0deg);
+
+    }
+
+    to {
+        transform: rotate(5deg);
+    }
+
+
+}
+
+/*social icon animations*/
+
+@keyframes anm-social-icons {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(20deg);
+        background-color: rgb(4, 88, 88);
     }
 }
