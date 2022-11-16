@@ -149,7 +149,7 @@ body {
     border-radius: 5%;
     width: 50%;
     padding: 0 1%;
-
+    cursor: pointer;
 }
 
 .container-works {
@@ -163,7 +163,7 @@ body {
     display: flex;
     justify-content: space-between;
     margin-bottom: 85px;
-
+    
 }
 
 
@@ -278,9 +278,53 @@ body {
 }
 
 
-/*2000px*/
 
-@media screen and (min-width:2000px) {
+
+/*section lightbox------------------------------------------------------------------------*/
+.close-lightbox{
+    position: absolute;
+    font-size: x-large;
+    top: 10%;
+    right: 5%;
+    cursor: pointer;
+    animation: anm-close-lightbox 2s infinite  alternate ;
+    
+}
+
+.containerLightbox{
+    display: flex;
+    position: fixed;
+    justify-content: center;
+    align-items: center;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 191, 255, 0.173);
+    z-index: 2;
+    transform: translateY(101%);
+}
+
+
+.show-contenedor-lightbox{
+    transition: .2s ;
+    transform: translate(0);
+    
+}
+
+.img-lightbox{
+    width: 65%;
+    box-shadow: 10px 10px 5px  rgb(255, 255, 255) inset, -10px -10px 5px  rgb(255, 255, 255) inset;
+    padding: 7px;
+    transform: scale(0);
+}
+.show-img-lightbox{
+    transition:  .3s .2s;
+    transform: scale(1);
+}
+/*1800px - 2500px*/
+
+@media screen and (min-width:1800px) {
     :root {
 
         --title-size: 40px;
@@ -406,6 +450,12 @@ body {
         margin-bottom: 35px;
     }
 
+    .img-lightbox{
+        width: 100%;
+        
+    }    
+
+
     /*about me / gallery*/
     .skills {
         width: 50%;
@@ -510,6 +560,11 @@ body {
 
         margin-bottom: 5px;
     }
+
+    .img-lightbox{
+        width: 100%;
+        
+    }    
 
     /*skills*/
     .skills {
@@ -631,3 +686,18 @@ body {
         background-color: rgb(4, 88, 88);
     }
 }
+
+/* close lightbox*/
+ @keyframes anm-close-lightbox {
+    from{
+        transform: rotate(0);
+        color: aliceblue;
+    }
+    50%{
+        color: aqua;
+    }
+    to{
+        transform: rotate(90deg);
+        color: rgb(255, 0, 0);
+    }
+ }
