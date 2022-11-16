@@ -27,22 +27,27 @@ const imgs_gallery =[
         url:"imgs/webDeb.jpg"
     }
 ]
-const img_initialGallery = document.querySelector(".img-gallery1"); 
+
 const imgLightboxGallery = document.querySelector(".img-lightboxGallery");
 const contenedorLightboxGallery = document.querySelector(".containerLightboxGallery");
 const btns_gallery = document.querySelectorAll(".btn-gallery");
 btns_gallery[0].addEventListener("click",back);
 btns_gallery[1].addEventListener("click",next);
-img_initialGallery.addEventListener("click", function(){
+
+const overlay = document.querySelector(".overlay");
+let imgActual= 0;
+
+overlay.addEventListener("click", function(){
     
-    aparecerImagenGallery(img_initialGallery.getAttribute("src"));
+    recorrerInfoFotos();
     aparecerContenedorLightboxGallery();
+    aparecerImagenGallery();
     aparecerBtnsGallery();
     
 })
 
-function aparecerImagenGallery(imgRuta){
-    imgLightboxGallery.setAttribute("src",imgRuta);
+function aparecerImagenGallery(){
+   
     imgLightboxGallery.classList.add("show-img-lightbox");
 }
 
@@ -67,13 +72,12 @@ contenedorLightboxGallery.addEventListener("click", function(e){
 
 
 
-let imgActual= 0;
-window.addEventListener("DOMContentLoaded", function(){ //sirve oara que se ejecute una funcion sin necesidad de que se haya terminado de cargar por completo la pagina
-    recorrerInfoFotos();
-})
+
+
 function recorrerInfoFotos(){
     const itemActual = imgs_gallery[imgActual];
     imgLightboxGallery.setAttribute("src",itemActual.url);
+    
 }
 
 function back() {
