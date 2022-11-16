@@ -9,6 +9,7 @@
     <script src="https://kit.fontawesome.com/857f5cafb2.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/lightBox.js" defer></script>
+    <script src="js/gallery.js" defer></script>
     <title>Document</title>
 </head>
 
@@ -30,6 +31,7 @@
         </nav>
     </header>
     <main class="main container">
+
         <header class="review-jesgod">
 
             <div class="text-header-main">
@@ -74,8 +76,8 @@
             </div>
         </section>
         <!--sections para lightbox-->
-        <section class="containerLightbox">
-            <i class="fa-solid fa-x close-lightbox" ></i>
+        <section class="containerLightboxWorks containerLightbox">
+            <i class="fa-solid fa-x close-lightbox"></i>
             <img src="" alt="" class="img-lightbox">
         </section>
         <!--fin section lightBox-->
@@ -85,9 +87,19 @@
             <section class="gallery-aboutMe">
                 <div class="gallery">
                     <img src="imgs/gamer.jpg" alt="" class="img-gallery1">
-                    <img src="imgs/webDeb.jpg" alt="" class="img-gallery2">
-                    <img src="imgs/music.jpg" alt="" class="img-gallery3">
                 </div>
+                <!--lightbox gallery-->
+                <section class="containerLightboxGallery containerLightbox">
+                    <i class="fa-solid fa-x close-lightbox"></i>
+                    <img src="" alt="" class="img-lightboxGallery img-lightbox">
+                    <!--btns(back-next) para la galleria de about me-->
+                    <div class="container-btns-gallery">
+                        <i class="fa-solid fa-chevron-left btn-gallery btn-gallery-back"></i>
+                        <i class="fa-solid fa-chevron-right btn-gallery btn-gallery-next"></i>
+                    </div>
+                </section>
+                <!--fin lightbox gallery-->
+
                 <div class="text-aboutMe">
                     <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis
                         cumque excepturi dolore, eligendi dolorem tenetur, beatae quaerat assumenda, voluptatibus a sit

@@ -1,6 +1,8 @@
 const imgsWorks = document.querySelectorAll(".imagen-work");
 const imgLightbox = document.querySelector(".img-lightbox");
-const contenedorLightbox = document.querySelector(".containerLightbox");
+const contenedorLightbox = document.querySelector(".containerLightboxWorks");
+
+
 
 imgsWorks.forEach(function (img) {
     img.addEventListener("click", function () {
@@ -26,3 +28,4 @@ contenedorLightbox.addEventListener("click", function(e){
         
     }
 })
+
