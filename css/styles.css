@@ -307,7 +307,7 @@ body {
 
 
 .show-contenedor-lightbox{
-    transition: .2s ;
+    transition: .2s ease-in-out;
     transform: translate(0);
     
 }
@@ -319,7 +319,7 @@ body {
     transform: scale(0);
 }
 .show-img-lightbox{
-    transition:  .3s .2s;
+    transition:  .3s .2s ;
     transform: scale(1);
 }
 /*1800px - 2500px*/
