@@ -202,15 +202,16 @@ body {
 
 .gallery {
     display: flex;
-    justify-items: center;
+    justify-content: center;
     align-items: center;
     padding: 20px;
     margin-bottom: 40px;
+    
 }
 
 .img-gallery1 {
-    width: 100%;
-    height: 100%;
+    width: 60%;
+    border-radius: 10%;
     box-shadow: 0 0px 6px rgb(255, 255, 255);
     cursor: pointer;
 }
