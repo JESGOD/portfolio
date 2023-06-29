@@ -1,161 +1,292 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!--FONTSAWESOME ICONS-->
-    <script src="https://kit.fontawesome.com/857f5cafb2.js" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="css/styles.css">
+    <script
+      src="https://kit.fontawesome.com/857f5cafb2.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="stylesheet" href="css/styles.css" />
     <script src="js/lightBox.js" defer></script>
     <script src="js/gallery.js" defer></script>
-    <title>Document</title>
-</head>
+    <title>portfolio</title>
+  </head>
 
-<body>
+  <body>
     <header class="container header" id="home">
-        <nav class="nav">
-            <div class="container-icono-nav">
-                <span class="icono-nav">J</span>
-                <p> JESGOD</p>
-            </div>
-            <div class="container-menu-nav">
-                <ul class="options-menu-nav">
-                    <li class="options"><a href="#home" class="links">Home</a></li>
-                    <li class="options"><a href="#works" class="links">Work</a></li>
-                    <li class="options"><a href="#about-me" class="links">About me</a></li>
-                    <li class="options"><a href="#contact" class="links">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
+      <nav class="nav">
+        <div class="container-icono-nav">
+          <span class="icono-nav">J</span>
+          <p>JESGOD</p>
+        </div>
+        <div class="container-menu-nav">
+          <ul class="options-menu-nav">
+            <li class="options"><a href="#home" class="links">Home</a></li>
+            <li class="options"><a href="#works" class="links">Work</a></li>
+            <li class="options">
+              <a href="#about-me" class="links">About me</a>
+            </li>
+            <li class="options">
+              <a href="#contact" class="links">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </header>
     <main class="main container">
-
-        <header class="review-jesgod">
-
-            <div class="text-header-main">
-                <h1 class="title">Hola, yo soy Jonny Esteban Samboni Muñoz(JESGOD), estoy aprendiendo Front-end de
-                    desarrollo web</h1>
-                <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis impedit rerum
-                    eum? Consectetur dignissimos culpa sapiente unde minima provident suscipit, distinctio maiores
-                    laboriosam similique saepe voluptatum quos sunt ipsam.</p>
+      <header class="review-jesgod">
+        <div class="text-header-main">
+          <h1 class="title">Hola, mi nombre es Esteban Muñoz</h1>
+          <p class="paragraph">
+            Me encanta la programación web y he dedicado tiempo a aprender
+            diferentes tecnologías como HTML, CSS y JavaScript, así como
+            frameworks tales como React; actaulmente estoy participando en el
+            proyecto Oracle ONE en Alura Latam.
+          </p>
+        </div>
+        <img src="imgs/perfil2.jpg" alt="" class="img-perfil-header" />
+      </header>
+      <section class="container-aboutMe" id="about-me">
+        <h2 class="title">Sobre mi</h2>
+        <h2 class="subtitle">Desarrollador Web - Amante De Los Videojuegos</h2>
+        <section class="gallery-aboutMe">
+          <div class="gallery">
+            <img src="imgs/gamer.jpg" alt="" class="img-gallery1" />
+            <div class="overlay">
+              <h1>GALLERY</h1>
+              <i class="fa-solid fa-image"></i>
             </div>
-            <img src="imgs/perfil2.jpg" alt="" class="img-perfil-header">
-        </header>
-        <section class="container-works" id="works">
-            <h2 class="title">Works</h2>
-            <div class="work-landingPage">
-                <img src="imgs/landingPage.PNG" alt="" class="imagen-work">
-                <div class="text-landingPage">
-                    <h2 class="subtitle"><a href="https://jesgod.github.io/landingPage/" target="_blank">Landing Page</a></h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis sunt quod,
-                        quibusdam quo id nostrum aliquid voluptatum saepe est pariatur.</p>
-                </div>
-            </div>
-            <div class="work-webRgb">
-                <img src="imgs/webRgb.PNG" alt="" class="imagen-work img-webRgb">
-                <div class="text-webRgb">
-                    <h2 class="subtitle"><a href="https://jesgod.github.io/webColoresAleatorios/" target="_blank">Web Geradora De Colores Smples y
-                            Hexadecimales</a></h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae dolor
-                        consequuntur nobis rem soluta sit cupiditate beatae quia delectus sed, quas a repellat dicta
-                        unde corrupti ratione pariatur est officiis.
-
-                    </p>
-                </div>
-            </div>
-            <div class="work-reviews">
-                <img src="imgs/webReviews.PNG" alt="" class="imagen-work">
-                <div class="text-reviews">
-                    <h2 class="subtitle"><a href="https://jesgod.github.io/webReviews/" target="_blank">Reviews Debelopers</a></h2>
-                    <p class="paragraph">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Voluptatibus non
-                        quas, eius animi placeat fugiat recusandae quidem aut expedita tenetur impedit, soluta aliquid
-                        magnam nulla? Delectus natus minus quibusdam eligendi.</p>
-                </div>
-            </div>
-        </section>
-        <!--sections para lightbox-->
-        <section class="containerLightboxWorks containerLightbox">
+          </div>
+          <!--lightbox gallery-->
+          <section class="containerLightboxGallery containerLightbox">
             <i class="fa-solid fa-x close-lightbox"></i>
-            <img src="" alt="" class="img-lightbox">
-        </section>
-        <!--fin section lightBox-->
-        <section class="container-aboutMe" id="about-me">
-            <h2 class="title">About Me</h2>
-            <h2 class="subtitle">Desarrollador Web - Amante De Los Videojuegos</h2>
-            <section class="gallery-aboutMe">
-                <div class="gallery">
-                    <img src="imgs/gamer.jpg" alt="" class="img-gallery1">
-                    <div class="overlay">
-                        <h1>GALLERY</h1>
-                        <i class="fa-solid fa-image"></i>
-                    </div>
-                </div>
-                <!--lightbox gallery-->
-                <section class="containerLightboxGallery containerLightbox">
-                    <i class="fa-solid fa-x close-lightbox"></i>
-                    <img src="" alt="" class="img-lightboxGallery img-lightbox">
-                    <!--btns(back-next) para la galleria de about me-->
-                    <div class="container-btns-gallery">
-                        <i class="fa-solid fa-chevron-left btn-gallery btn-gallery-back"></i>
-                        <i class="fa-solid fa-chevron-right btn-gallery btn-gallery-next"></i>
-                    </div>
-                </section>
-                <!--fin lightbox gallery-->
+            <img src="" alt="" class="img-lightboxGallery img-lightbox" />
+            <!--btns(back-next) para la galleria de about me-->
+            <div class="container-btns-gallery">
+              <i
+                class="fa-solid fa-chevron-left btn-gallery btn-gallery-back"
+              ></i>
+              <i
+                class="fa-solid fa-chevron-right btn-gallery btn-gallery-next"
+              ></i>
+            </div>
+          </section>
+          <!--fin lightbox gallery-->
 
-                <div class="text-aboutMe">
-                    <p class="paragraph">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Tempora facilis
-                        cumque excepturi dolore, eligendi dolorem tenetur, beatae quaerat assumenda, voluptatibus a sit
-                        quo possimus dolor eum dolores nam itaque rem?
-                        Suscipit omnis quaerat numquam aut animi mollitia temporibus magnam odit praesentium fugiat ab
-                        qui delectus, rerum nesciunt nisi accusantium totam consectetur similique nobis sit. Molestias
-                        velit tempora magni dicta mollitia?<br><br>
-                        Accusantium excepturi, explicabo necessitatibus cumque doloremque animi iusto id repellendus in
-                        architecto. Eum dolorem sit veritatis eos nihil eius, non, quos corporis aperiam quo impedit
-                        ipsum cumque dicta minus exercitationem?
-                        Facere velit repellendus alias! Et doloribus sit non fugit nisi repellat quidem quos tempora
-                        animi, error repellendus, explicabo amet optio provident tempore veniam aperiam deserunt sequi
-                        velit aliquid! Debitis, aperiam. <br><br>
-                        Repellendus non tempora quae debitis quibusdam deleniti nam laborum qui eaque. Nesciunt
-                        recusandae nulla perferendis corporis sit dolores placeat quos nobis illum. Omnis, saepe.
-                        Possimus corporis dolorum repellendus dolore laudantium.
-                        Ducimus laboriosam labore vitae voluptate perferendis repellat. Blanditiis labore nesciunt
-                        veritatis et corporis, recusandae facere aperiam qui? Corporis dicta quae ut, deleniti non hic
-                        dignissimos ratione molestiae quia culpa libero.</p>
-                </div>
-                <div class="skills-values">
-                    <div class="skills">
-                        <h2 class="title">Habilidades Principales</h2>
-                        <h3 class="subtitle">Desarrolador Web</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta ullam.</p>
-                        <h3 class="subtitle">Front-end</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                    </div>
-                    <div class="values">
-                        <h2 class="title">Valores</h2>
-                        <h3 class="subtitle">Comprometido</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet.</p>
-                        <h3 class="subtitle">Honesto</h3>
-                        <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
-                    </div>
-                </div>
-            </section>
+          <div class="text-aboutMe">
+            <p class="paragraph">
+              Con 23 años he demostrado ser un autodidacta capaz de aprender por
+              mi mismo, lo que me ha permitido dominar diversas tecnologías de
+              desarrollo web, como HTML, CSS, JavaScript, React y TailwindCSS.
+              Mi pasión por el desarrollo web es evidente en mis intereses y
+              aficiones, lo que me ha llevado a explorar diferentes áreas de la
+              programación y el diseño web. Por otro lado, soy un entusiasta de
+              los videojuegos y la música, dos pasatiempos que pueden alimentar
+              mi creatividad e inspiración en mi trabajo de desarrollo web.
+            </p>
+          </div>
+          <div class="skills-values">
+            <div class="skills">
+              <h2 class="title">Hobbies</h2>
+              <h3 class="subtitle">Tocar el piano</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta
+                ullam.
+              </p>
+              <h3 class="subtitle">Jugar a video juegos</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              </p>
+              <h3 class="subtitle">Desarrollar paginas web</h3>
+              <p class="paragraph">
+                Lorem ipsum dolor sit amet consectetur adipisicing.
+              </p>
+            </div>
+            <div class="values">
+              <h2 class="title">Soft skills</h2>
+              <h3 class="subtitle">Adaptabilidad</h3>
+              <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+              <h3 class="subtitle">Pensamiento crítico</h3>
+              <p class="paragraph">Lorem ipsum dolor sit amet consectetur.</p>
+              <h3 class="subtitle">Colaboración</h3>
+              <p class="paragraph">Lorem ipsum dolor sit amet.</p>
+            </div>
+          </div>
         </section>
+      </section>
+      <section class="formacion-cursos">
+        <h2 class="title">Cursos</h2>
+        <div class="container__cursos">
+          <div class="container__curso">
+            <div class="container-img__curso">
+              <img class="img__curso" src="./imgs/curso1.png" alt="" />
+            </div>
+            <p class="paragraph">Formación Desarrollo Personal G5 - ONE</p>
+          </div>
+          <div class="container__curso">
+            <div class="container-img__curso">
+              <img class="img__curso" src="./imgs/curso2.png" alt="" />
+            </div>
+            <p class="paragraph">
+              Formación Principiante en Programación G5 - ONE
+            </p>
+          </div>
+          <div class="container__curso">
+            <div class="container-img__curso">
+              <img class="img__curso" src="./imgs/curso3.png" alt="" />
+            </div>
+            <p class="paragraph">Formación HTML & CSS</p>
+          </div>
+        </div>
+      </section>
+      <section class="container-works" id="works">
+        <h2 class="title">Trabajos</h2>
+        <div class="work-card">
+          <img src="imgs/landingPage.PNG" alt="" class="imagen-work" />
+          <div class="text-card">
+            <h2 class="subtitle">
+              <a href="https://jesgod.github.io/landingPage/" target="_blank"
+                >Landing Page</a
+              >
+            </h2>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              sunt quod, quibusdam quo id nostrum aliquid voluptatum saepe est
+              pariatur.
+            </p>
+          </div>
+        </div>
+
+        <div class="work-card" style="flex-flow: row-reverse">
+          <img src="imgs/encriptador.png" alt="" class="imagen-work" />
+          <div class="text-card">
+            <h2 class="subtitle">
+              <a href="https://jesgod.github.io/landingPage/" target="_blank"
+                >Encriptador/Desencriptador de texto</a
+              >
+            </h2>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis
+              sunt quod, quibusdam quo id nostrum aliquid voluptatum saepe est
+              pariatur.
+            </p>
+          </div>
+        </div>
+
+        <div class="work-card">
+          <img src="imgs/webRgb.PNG" alt="" class="imagen-work img-webRgb" />
+          <div class="text-card">
+            <h2 class="subtitle">
+              <a
+                href="https://jesgod.github.io/webColoresAleatorios/"
+                target="_blank"
+                >Web Geradora De Colores Simples y Hexadecimales</a
+              >
+            </h2>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+              Repudiandae dolor consequuntur nobis rem soluta sit cupiditate
+              beatae quia delectus sed, quas a repellat dicta unde corrupti
+              ratione pariatur est officiis.
+            </p>
+          </div>
+        </div>
+        <div class="work-card" style="flex-flow: row-reverse">
+          <img src="imgs/webReviews.PNG" alt="" class="imagen-work" />
+          <div class="text-card">
+            <h2 class="subtitle">
+              <a href="https://jesgod.github.io/webReviews/" target="_blank"
+                >Reviews Debelopers</a
+              >
+            </h2>
+            <p class="paragraph">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Voluptatibus non quas, eius animi placeat fugiat recusandae quidem
+              aut expedita tenetur impedit, soluta aliquid magnam nulla?
+              Delectus natus minus quibusdam eligendi.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!--sections para lightbox-->
+      <section class="containerLightboxWorks containerLightbox">
+        <i class="fa-solid fa-x close-lightbox"></i>
+        <img src="" alt="" class="img-lightbox" />
+      </section>
+      <!--fin section lightBox-->
+      <form class="form">
+        <h2 class="form__title title">Contactame</h2>
+        <p class="form__paragraph"></p>
+        <section class="form-container__principal">
+          <div class="conmtainer-img__fomr">
+            <img class="img__form" src="./imgs/formCorreosvg.svg" alt="" />
+          </div>
+          <div class="form__container">
+            
+            <!-- label prueba -->
+            <div class="input-group">
+              <input
+                required=""
+                type="text"
+                name="text"
+                autocomplete="off"
+                class="input"
+              />
+              <label class="user-label">Nombre</label>
+            </div>
+            <div class="input-group">
+              <input
+                required=""
+                type="text"
+                name="text"
+                autocomplete="off"
+                class="input"
+              />
+              <label class="user-label">Correo</label>
+            </div>
+            <div class="input-group">
+              <input
+                required=""
+                type="text"
+                name="text"
+                autocomplete="off"
+                class="input"
+              />
+              <label class="user-label">Asunto</label>
+            </div>
+            <div class="input-group">
+              <textarea
+                name="mensaje"
+                id="mensaje"
+                class=" input"
+                cols="30"
+                rows="10"
+                style="resize: none"
+                placeholder="ingresa el mensaje"
+              ></textarea>
+            </div>
+            <!-- fin label prueba -->
+            <input type="submit" class="button" value="enviar" />  
+        </section>
+      </form>
     </main>
     <footer class="container" id="contact">
-        <div class="line"></div>
-        <div class="copyright-socialMedia">
-            <div class="copy-right">
-                <p class="paragraph"><i class="fa-regular fa-copyright"></i>Copyright 2022| JESGOD</p>
-            </div>
-            <div class="social-icon">
-                <a href="" class="s-icono"><i class="fa-brands fa-facebook-f"></i></a>
-                <a href="" class="s-icono"><i class="fa-brands fa-instagram"></i></a>
-                <a href="" class="s-icono"><i class="fa-brands fa-twitter"></i></a>
-            </div>
+      <div class="line"></div>
+      <div class="copyright-socialMedia">
+        <div class="copy-right">
+          <p class="paragraph">
+            <i class="fa-regular fa-copyright"></i>Copyright 2023| JESGOD
+          </p>
         </div>
+        <div class="social-icon">
+          <a href="" class="s-icono"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="" class="s-icono"><i class="fa-brands fa-instagram"></i></a>
+          <a href="" class="s-icono"><i class="fa-brands fa-twitter"></i></a>
+        </div>
+      </div>
     </footer>
-</body>
-
+  </body>
 </html>
